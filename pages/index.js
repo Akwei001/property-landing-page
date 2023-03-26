@@ -23,6 +23,7 @@ import {
   scrollSpy,
   scroller,
 } from 'react-scroll';
+import ApartmentRoom from '../public/pexels-pixabay-271618.jpg';
 
 export default function Home() {
   useEffect(() => {
@@ -59,8 +60,9 @@ export default function Home() {
             </p>
             <Waitlist />
           </div>
-          <div className='max-w-6xl m-auto mt-20 rounded-t-lg h-96 bg-midnight-blue'></div>
-          <div className='max-w-6xl m-auto rounded-b-lg h-96 bg-midnight-blue md:mb-20'></div>
+          <Image src={ApartmentRoom} alt='Picture of apartment' />
+          {/* <div className='max-w-6xl m-auto mt-20 rounded-t-lg h-96 bg-midnight-blue'></div> */}
+          {/* <div className='max-w-6xl m-auto rounded-b-lg h-96 bg-midnight-blue md:mb-20'></div> */}
           <div className='max-w-2xl py-16 m-auto' data-aos='fade-up'>
             <h2 className='mt-4 text-5xl font-bold text-center text-white md:text-6xl'>
               Apartment living
