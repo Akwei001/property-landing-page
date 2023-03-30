@@ -60,7 +60,13 @@ export default function Home() {
             </p>
             <Waitlist />
           </div>
-          <Image src={ApartmentRoom} alt='Picture of apartment' />
+          <Image
+            className='max-w-6xl m-auto mt-20 rounded-t-lg h-96'
+            src={ApartmentRoom}
+            alt='Picture of apartment'
+            // width={1000}
+            // height={500}
+          />
           {/* <div className='max-w-6xl m-auto mt-20 rounded-t-lg h-96 bg-midnight-blue'></div> */}
           {/* <div className='max-w-6xl m-auto rounded-b-lg h-96 bg-midnight-blue md:mb-20'></div> */}
           <div className='max-w-2xl py-16 m-auto' data-aos='fade-up'>
