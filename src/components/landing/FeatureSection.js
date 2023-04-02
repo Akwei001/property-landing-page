@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ModernBedroom from '../../../public/modern-minimalist-bedroom-g82e84c631_1280.jpg';
+// import ModernBedroom from '../../../public/modern-minimalist-bedroom-g82e84c631_1280.jpg';
 
-const FeatureSection = ({ title, subtitle, quote, name, side }) => {
+const FeatureSection = ({ title, subtitle, quote, name, side, image }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -34,13 +34,14 @@ const FeatureSection = ({ title, subtitle, quote, name, side }) => {
           </div>
         </div>
       </div>
-      <Image
+      <div>{image}</div>
+      {/* <Image
         src={ModernBedroom}
         alt='Picture of Bedroom'
         className='rounded-lg md:flex-1'
         height={250}
         width={450}
-      />
+      /> */}
       {/* <div className='rounded-lg md:flex-1 bg-midnight-blue'>image</div> */}
     </div>
   );

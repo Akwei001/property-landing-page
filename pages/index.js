@@ -24,6 +24,8 @@ import {
   scroller,
 } from 'react-scroll';
 import ApartmentRoom from '../public/pexels-pixabay-271618.jpg';
+import ModernBedroom from '../public/modern-minimalist-bedroom-g82e84c631_1280.jpg';
+import ModernLivingRoom from '../public/livingroom-g6e854ffa2_1280.jpg';
 
 export default function Home() {
   useEffect(() => {
@@ -61,11 +63,11 @@ export default function Home() {
             <Waitlist />
           </div>
           <Image
-            className='max-w-6xl m-auto mt-20 rounded-t-lg h-96'
+            className='max-w-6xl m-auto mt-20 rounded-lg h-96'
             src={ApartmentRoom}
             alt='Picture of apartment'
-            // width={1000}
-            // height={500}
+            width={1000}
+            height={500}
           />
           {/* <div className='max-w-6xl m-auto mt-20 rounded-t-lg h-96 bg-midnight-blue'></div> */}
           {/* <div className='max-w-6xl m-auto rounded-b-lg h-96 bg-midnight-blue md:mb-20'></div> */}
@@ -113,6 +115,15 @@ export default function Home() {
             quote='The Oasis is a true gem in the heart of the city. The stunning architecture, expansive views, and high-end finishes make it the perfect place for anyone looking for a luxurious living experience.'
             name='Maria Rodriguez'
             side='left'
+            image={
+              <Image
+                src={ModernBedroom}
+                alt='Picture of Bedroom'
+                className='rounded-lg md:flex-1'
+                height={250}
+                width={450}
+              />
+            }
           />
         </div>
         <div className='px-4 mt-8 overflow-hidden md:mt-16'>
@@ -122,6 +133,15 @@ export default function Home() {
             quote="Harmony Heights is more than just an apartment complex, it's a community. The staff goes above and beyond to make residents feel welcome and comfortable, and the events and activities organized by the community create a real sense of belonging."
             name='Jameson Lee'
             side='right'
+            image={
+              <Image
+                src={ModernLivingRoom}
+                alt='Picture of Bedroom'
+                className='rounded-lg md:flex-1'
+                height={250}
+                width={450}
+              />
+            }
           />
         </div>
         <div className='py-8 mt-8 md:py-16 md:mt-16' data-aos='fade-up'>
@@ -132,7 +152,7 @@ export default function Home() {
         </div>
         <div className='py-8 md:py-16' data-aos='fade-up'>
           <Pricing
-            title='Pricing plans for teams of all sizes'
+            title='Pricing plans for Apartments'
             subtitle='Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam'
             onClick={scroll.scrollToTop}
           />
