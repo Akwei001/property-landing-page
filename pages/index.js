@@ -146,8 +146,8 @@ export default function Home() {
         </div>
         <div className='py-8 mt-8 md:py-16 md:mt-16' data-aos='fade-up'>
           <HowItWorks
-            title='Get up and running in minutes'
-            subtitle='Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam'
+            title='Amenities'
+            subtitle='24/7 residents gym,Wellness workshops, Move-in health checks, Mental Health First Aiders, 250MBPS broadband, 24-hour concierge, On-site maintenance, Security - CCTV secure by design, Samsung appliances, Outside gardens Roof terraces, Cinema, games room, Flexible workspace, Shared lounges & library, Resident dining space, Resident events & clubs, Bicycle storage & maintenance, the list goes on.....'
           />
         </div>
         <div className='py-8 md:py-16' data-aos='fade-up'>
