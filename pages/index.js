@@ -23,8 +23,8 @@ import {
   scrollSpy,
   scroller,
 } from 'react-scroll';
-import ApartmentRoom from '../public/pexels-pixabay-271618.jpg';
-import ModernBedroom from '../public/modern-minimalist-bedroom-g82e84c631_1280.jpg';
+import ApartmentRoom from '../public/dan-gold-4HG3Ca3EzWw-unsplash.jpg';
+import ModernBedroom from '../public/sidekix-media-WDUtNbot6Qw-unsplash.jpg';
 import ModernLivingRoom from '../public/livingroom-g6e854ffa2_1280.jpg';
 
 export default function Home() {
@@ -63,17 +63,20 @@ export default function Home() {
             <Waitlist />
           </div>
           <Image
-            className='max-w-6xl m-auto mt-20 rounded-lg h-96'
+            className='max-w-6xl m-auto mt-20 rounded-lg h-96 md:flex'
             src={ApartmentRoom}
             alt='Picture of apartment'
-            width={1000}
-            height={500}
+            // width={1000}
+            // height={500}
           />
           {/* <div className='max-w-6xl m-auto mt-20 rounded-t-lg h-96 bg-midnight-blue'></div> */}
           {/* <div className='max-w-6xl m-auto rounded-b-lg h-96 bg-midnight-blue md:mb-20'></div> */}
           <div className='max-w-2xl py-16 m-auto' data-aos='fade-up'>
             <h2 className='mt-4 text-5xl font-bold text-center text-white md:text-6xl'>
-              Apartment living
+              Our latest complex:
+            </h2>
+            <h2 className='mt-4 text-5xl font-bold text-center text-white md:text-6xl'>
+              The Grand
             </h2>
             <p className='my-8 text-2xl font-medium text-center text-white'>
               A whole new way to rent in the heart of the cities you love. From
@@ -91,27 +94,39 @@ export default function Home() {
                 <p className='text-2xl font-medium'>Conceirge</p>
               </div>
               <div className='py-2 text-center'>
-                <h2 className='mb-2 text-5xl font-bold md:text-6xl'>100k</h2>
-                <p className='text-2xl font-medium'>Something</p>
+                <h2 className='mb-2 text-5xl font-bold md:text-6xl'>
+                  Exclusive
+                </h2>
+                <p className='text-2xl font-medium'>interior design</p>
               </div>
             </div>
           </div>
         </div>
-        <div className='py-8 bg-white md:py-16' data-aos='fade-up'>
+
+        <div className='py-8 mt-8 md:py-16 md:mt-16' data-aos='fade-up'>
+          <HowItWorks
+            title='Amenities'
+            subtitle='24/7 residents gym,Wellness workshops, Move-in health checks, Mental Health First Aiders, 250MBPS broadband, 24-hour concierge, On-site maintenance, Security - CCTV secure by design, Samsung appliances, Outside gardens Roof terraces, Cinema, games room, Flexible workspace, Shared lounges & library, Resident dining space, Resident events & clubs, Bicycle storage & maintenance, the list goes on.....'
+          />
+        </div>
+
+        <div
+          className='py-8 bg-gradient-to-b from-white to-primary'
+          data-aos='fade-up'
+        >
           <div className='max-w-2xl py-16 m-auto'>
             <h2 className='mt-4 text-5xl font-bold text-center text-midnight-blue md:text-6xl'>
-              Sunt in culpa qui officia deserunt mollit anim id
+              LifeWay Apartments: Where Residents Come First.
             </h2>
             <p className='mt-8 text-2xl font-medium text-center text-gray-600'>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam
+              Hear From Our Satisfied Tenants.
             </p>
           </div>
         </div>
         <div className='px-4 overflow-hidden'>
           <FeatureSection
-            title='Neque porro quisquam est, qui dolorem ipsum'
-            subtitle='Quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora'
+            title='The Oasis'
+            // subtitle='Quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora'
             quote='The Oasis is a true gem in the heart of the city. The stunning architecture, expansive views, and high-end finishes make it the perfect place for anyone looking for a luxurious living experience.'
             name='Maria Rodriguez'
             side='left'
@@ -128,8 +143,8 @@ export default function Home() {
         </div>
         <div className='px-4 mt-8 overflow-hidden md:mt-16'>
           <FeatureSection
-            title='Et quasi architecto beatae vitae dicta sunt explicabo'
-            subtitle='Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.'
+            title='Harmony Heights'
+            // subtitle='Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.'
             quote="Harmony Heights is more than just an apartment complex, it's a community. The staff goes above and beyond to make residents feel welcome and comfortable, and the events and activities organized by the community create a real sense of belonging."
             name='Jameson Lee'
             side='right'
@@ -144,30 +159,24 @@ export default function Home() {
             }
           />
         </div>
-        <div className='py-8 mt-8 md:py-16 md:mt-16' data-aos='fade-up'>
-          <HowItWorks
-            title='Amenities'
-            subtitle='24/7 residents gym,Wellness workshops, Move-in health checks, Mental Health First Aiders, 250MBPS broadband, 24-hour concierge, On-site maintenance, Security - CCTV secure by design, Samsung appliances, Outside gardens Roof terraces, Cinema, games room, Flexible workspace, Shared lounges & library, Resident dining space, Resident events & clubs, Bicycle storage & maintenance, the list goes on.....'
-          />
-        </div>
         <div className='py-8 md:py-16' data-aos='fade-up'>
           <Pricing
             title='Pricing plans for Apartments'
-            subtitle='Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam'
+            // subtitle='Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam'
             onClick={scroll.scrollToTop}
           />
         </div>
-        <div className='px-4 py-8 md:py-16' data-aos='fade-up'>
+        {/* <div className='px-4 py-8 md:py-16' data-aos='fade-up'>
           <FAQ />
-        </div>
+        </div> */}
         <div
           className='px-4 py-8 md:py-16'
           data-aos='fade-up'
           onClick={() => scroll.scrollToTop()}
         >
           <CTA
-            title='Ut enim ad minima veniam, quis nostrum exercitationem'
-            subtitle='ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur'
+            title='Ready to move in?'
+            // subtitle='ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur'
             onCTAClick={scroll.scrollToTop}
           />
         </div>

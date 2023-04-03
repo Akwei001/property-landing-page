@@ -5,28 +5,37 @@ import Image from 'next/image';
 
 const STEPS = [
   {
-    title: 'Gym',
-    subtitle: 'Onsite gym',
-    imagepath: '../../../public/gym-g827ab4ec5_1280.jpg',
+    title: 'On-Site Gym',
+    subtitle:
+      'Get Fit Without Leaving Home: Our On-Site Gym Has Everything You Need',
+    imagepath: '/workout-gc488fd0d4_1280.jpg',
   },
   {
-    title: 'Cinema',
-    subtitle: 'Sed do eiusmod tempor incididunt ut',
-    imagepath: '../../../public/pexels-pavel-danilyuk-7234230.jpg',
+    title: 'Private Cinema',
+    subtitle:
+      'Movie Nights Made Easy: Our Cinema Room is the Perfect Spot for Relaxing and Entertaining',
+    imagepath: '/pexels-pavel-danilyuk-7234230.jpg',
   },
   {
-    title: 'Roof',
-    subtitle: 'Sed do eiusmod tempor incididunt ut',
-    imagepath: '',
+    title: 'Roof Terrace',
+    subtitle:
+      'A Scenic Escape: Take in the Views from Our Stunning Roof Terrace',
+    imagepath: '/brands-people-en-u6xqnbsg-unsplash.jpg',
   },
 ];
 
-const Step = ({ step, imagepath }) => {
+const Step = ({ step }) => {
   return (
-    <div className='flex-1 px-4 py-4'>
+    <div className='flex-1 px-4 py-4 '>
       {/* <div className="w-full h-64 rounded-lg bg-midnight-blue"></div> */}
-      <div>
-        <Image src={imagepath} alt='Gym image' />
+      <div className=''>
+        <Image
+          className='rounded-lg'
+          src={step.imagepath}
+          alt=''
+          height={300}
+          width={300}
+        />
       </div>
       <div className='mt-4'>
         <p className='mb-2 text-2xl font-bold text-center text-gray-600 md:text-left'>
@@ -40,7 +49,7 @@ const Step = ({ step, imagepath }) => {
   );
 };
 
-const HowItWorks = ({ title, subtitle, imagepath }) => {
+const HowItWorks = ({ title, subtitle }) => {
   return (
     <div>
       <div className='max-w-2xl m-auto'>
