@@ -75,7 +75,7 @@ export default function Home() {
             <h2 className='mt-4 text-5xl font-bold text-center text-white md:text-6xl'>
               Our latest complex:
             </h2>
-            <h2 className='mt-4 text-5xl font-bold text-center text-white md:text-6xl'>
+            <h2 className='mt-4 text-5xl font-bold text-center text-transparent bg-clip-text md:text-6xl bg-gradient-to-r from-sky-400 to-primary'>
               The Grand
             </h2>
             <p className='my-8 text-2xl font-medium text-center text-white'>
