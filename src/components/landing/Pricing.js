@@ -93,7 +93,7 @@ const Card = ({ plan, index, onClick }) => {
           className={`text-center mt-4 px-7 py-3 rounded-lg border-2 ${
             index === 1
               ? 'bg-white text-primary border-white'
-              : 'bg-primary text-white border-primary'
+              : 'bg-midnight-blue text-white border-midnight-blue'
           } text-xl font-medium cursor-pointer hover:opacity-50 duration-200`}
         >
           {plan.buttonTitle}
