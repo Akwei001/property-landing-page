@@ -48,8 +48,8 @@ const Card = ({ plan, index, onClick }) => {
   return (
     <div className='flex flex-col flex-1 px-4 mb-8 md:mb-0 basis-full'>
       <div
-        className={`flex flex-col flex-1 p-8 ${
-          index === 1 ? 'bg-primary' : 'bg-white border-2 border-primary'
+        className={`shadow-lg flex flex-col flex-1 p-8 ${
+          index === 1 ? 'bg-midnight-blue' : 'bg-white border-2 border-primary'
         } rounded-lg`}
       >
         <p className={`text-2xl font-medium mb-4 ${textPrimaryColor}`}>
@@ -66,7 +66,7 @@ const Card = ({ plan, index, onClick }) => {
         <p className={`text-lg font-medium py-4 ${textSecondaryColor}`}>
           {plan.description}
         </p>
-        <div className='flex-1'>
+        <div className='flex-1 '>
           {plan.features.map((f, fIndex) => {
             return (
               <div

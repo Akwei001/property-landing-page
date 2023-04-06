@@ -1,17 +1,15 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
-	return (
-		<div className="flex justify-between p-4 max-w-2xl m-auto border-t-2">
-			<h3 className="text-md text-gray-600">
-				Copyright 2022 Infisical Inc.
-			</h3>
-			<div className="flex">
-				<p className="text-md text-gray-600">Terms</p>
-				<p className="text-md text-gray-600 ml-4">Privacy</p>
-			</div>
-		</div>
-	);
-}
+  return (
+    <div className='flex justify-between max-w-2xl p-4 m-auto border-t-2'>
+      <h3 className='text-gray-600 text-md'>Copyright 2023.</h3>
+      <div className='flex'>
+        <p className='text-gray-600 text-md'>Terms</p>
+        <p className='ml-4 text-gray-600 text-md'>Privacy</p>
+      </div>
+    </div>
+  );
+};
 
 export default Footer;

@@ -34,7 +34,7 @@ const FeatureSection = ({ title, subtitle, quote, name, side, image }) => {
           </div>
         </div>
       </div>
-      <div>{image}</div>
+      <div className=''>{image}</div>
       {/* <Image
         src={ModernBedroom}
         alt='Picture of Bedroom'

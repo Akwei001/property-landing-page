@@ -123,7 +123,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className='px-4 overflow-hidden'>
+        <div className='px-4 overflow-hidden '>
           <FeatureSection
             title='The Oasis'
             // subtitle='Quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora'
@@ -134,7 +134,7 @@ export default function Home() {
               <Image
                 src={ModernBedroom}
                 alt='Picture of Bedroom'
-                className='rounded-lg md:flex-1'
+                className='rounded-lg md:flex-1 shadow-indigo-500/50'
                 height={250}
                 width={450}
               />
